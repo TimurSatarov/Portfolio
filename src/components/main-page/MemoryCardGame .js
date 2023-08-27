@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import './MemoryCardGame.css';
 
 const MemoryCardGame = () => {
   const symbols = ['🐶', '🐱', '🐻', '🐼', '🐵', '🦄'];
@@ -36,12 +36,6 @@ const MemoryCardGame = () => {
   }
 
   return (
-    
-    <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2.0 }}
-    >
       <div className="memory-card-game">
       <button className="reset-button" onClick={resetGame}>Reset</button>
       <div className="cards">
@@ -56,7 +50,6 @@ const MemoryCardGame = () => {
         ))}
       </div>
     </div>
-    </motion.section>
   );
 };
 

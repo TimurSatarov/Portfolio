@@ -1,40 +1,63 @@
-.memory-card-game {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #c2b9b9;
-  }
-  
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    gap: 10px;
-  }
-  
-  .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    font-size: 24px;
-    background-color: #fff;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .card.flipped {
-    background-color: #ff6347;
-    color: #fff;
-  }
-  .reset-button {
-  margin-right: 20px;
-  font-size: 16px;
-  padding: 8px 16px;
-  background-color: #333;
+.home {
+  position: relative;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content:flex-start;
+  height: 100vh;
+  overflow: hidden;
+  /* background-color: #4a737e; */
+}
+
+
+
+.background-blur {
+  position: absolute;
+  top: 0;
+  right: 0; 
+  bottom: 50px;
+  width: 50%; 
+  height: 100%;
+  margin-bottom: 50%;
+  background: url('../gif/Idle.gif'); 
+  background-color: #85a4a8;
+  display: flex;
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(5px);
+  z-index: -1;
+}
+
+.name {
+  text-align: left; 
+  margin-left: 20px;
+  font-size: 64px;
+  font-family: 'Arial', sans-serif;
   color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); 
+  position: relative; 
+  z-index: 1; 
+  /* -webkit-text-stroke: 1.5px black; */
+}
+
+.role {
+  text-align: left; /* Align the text to the left */
+  margin-left: 20px;
+  font-size: 34px;
+  font-family: 'Helvetica', sans-serif;
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); 
+  position: relative;
+  z-index: 1; 
+  /* -webkit-text-stroke: 1px black; */
+}
+.content{
+  flex: 1; /* Expand to fill remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  justify-content: center;
+  text-align: left;
+  padding-left: 20px;
 }

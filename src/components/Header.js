@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/header.css';
 
 const Header = () => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleClick = () => {
+    setIsFlipped(prevState => !prevState);
+  };
   return (
     <header className="header">
       <nav>
