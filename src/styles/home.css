@@ -18,8 +18,8 @@
   transform: translateY(-50%);
   display: flex;
   background-size: cover;
-  filter: blur(8px);
-  -webkit-filter: blur(5px);
+  /* filter: blur(8px); */
+  /* -webkit-filter: blur(5px); */
   z-index: -1;
 }
 
@@ -63,14 +63,12 @@
   right: 0;
   width: 50%;
   transform: translateY(-50%);
-  z-index: 1;
-  /* -webkit-filter: blur(5px); */
 }
 
 .gif {
   width: 100%;
   height: auto;
-  max-height: 100vh;
+  max-height: 106vh;
   object-fit: contain;
   /* filter: blur(8px); */
 }

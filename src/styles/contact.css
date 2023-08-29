@@ -1,0 +1,67 @@
+.contact {
+  position: relative;
+  color: #fff;
+  padding: 100px 0;
+  height: 70.8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact-content {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.email-link,
+.linkedin-link,
+.github-link {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00adb5;
+  transition: background-color 0.3s;
+}
+
+.email-link:hover,
+.linkedin-link:hover,
+.github-link:hover {
+  background-color: #007d86;
+}
+
+.contact {
+  background-color: #353333;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+  background-image: url('../images/github-mark.png');
+  background-size: 350px; 
+  background-repeat: no-repeat;
+  background-position: center;
+}

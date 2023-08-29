@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/header.css';
 
-const Header = () => {
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  const handleClick = () => {
-    setIsFlipped(prevState => !prevState);
-  };
+function Header() {
   return (
     <header className="header">
       <nav>
@@ -31,6 +25,6 @@ const Header = () => {
       </nav>
     </header>
   );
-};
+}
 
 export default Header;
